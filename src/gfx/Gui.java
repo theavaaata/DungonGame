@@ -11,10 +11,10 @@ public class Gui     {
         JLabel j;
         ImageIcon i;
         i = new ImageIcon(Objects.requireNonNull(Gui.class.getResource("grass.png")));
-         i.setImage(i.getImage().getScaledInstance(100,100, Image.SCALE_DEFAULT));
+        i.setImage(i.getImage().getScaledInstance(Variables.size,Variables.size, Image.SCALE_DEFAULT));
 
         j = new JLabel(i);
-        j.setBounds(0,0,1000,1000);
+
 
 
         Variables.window = new JFrame("Dungeon");
@@ -26,13 +26,14 @@ public class Gui     {
 
 
 
-
+        j.setBounds(0,0,Variables.size,Variables.size);
 
 
         Variables.draw.setBounds(0,0,Variables.width,Variables.height);
         Variables.draw.setVisible(true);
         Variables.window.add(Variables.draw);
         Variables.window.add(j);
+        Variables.window.setLayout(null);
         Variables.window.setVisible(true);
     }
     public static void loader(){
