@@ -14,7 +14,7 @@ public class Loader {
     */
     static ImageIcon[] graphics = new ImageIcon[100];
     //die eingefügten Grapfiken
-    static JLabel[][] tiles = new JLabel[16][9];
+    static JLabel[][] tiles = new JLabel[9][16];
     /*World design
 
 
@@ -26,6 +26,15 @@ public class Loader {
                                 {1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,2,2,2,1,1,1,1,1,1,1,1},
+                                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+                                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}};
+    static int[][] design2 =   {{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
+                                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+                                {1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1},
+                                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+                                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+                                {1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
+                                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}};
 
@@ -54,14 +63,34 @@ public class Loader {
 
                 }
                 break;
-        }
+            case 2:
+                for(int x = 0; x<16; x++){
+                    for(int y = 0; y<9; y++){
+                        if(design2[y][x] == 1){
+                            tiles[y][x] = new JLabel(graphics[1]);
+                        }
+                        if(design2[y][x] == 2){
+                            tiles[y][x] = new JLabel(graphics[2]);
+                        }
+                    }
 
+                }
+                break;
+        }
+        position();
     }
-    public static void position(){
+    public static void position() {
+        for (int x = 0; x < 16; x++) {
+            for (int y = 0; y < 9; y++) {
+                tiles[y][x].setBounds(Variables.size * x, Variables.size * y, Variables.size, Variables.size);
+                Variables.window.add(tiles[y][x]);
+            }
+        }
+    }
+    public static void clear(){
         for(int x = 0; x<16; x++){
             for(int y = 0; y<9; y++){
-                tiles[y][x].setBounds(Variables.size*x,Variables.size*y,Variables.size,Variables.size);
-                Variables.window.add(tiles[y][x]);
+                Variables.window.remove(tiles[y][x]);
             }
         }
     }

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb38ada7-0b30-43eb-96e7-341e65b517d9" name="Changes" comment="&#10;enter">
+    <list default="true" id="eb38ada7-0b30-43eb-96e7-341e65b517d9" name="Changes" comment="loader">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Loop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/Variables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Variables.java" afterDir="false" />
     </list>
     <list id="49a472a5-a42e-47ce-bc6b-91378a57d3f6" name="Changes by xbox-" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +89,7 @@
       <workItem from="1663239645934" duration="163000" />
       <workItem from="1663245238208" duration="1874000" />
       <workItem from="1663247427053" duration="321000" />
-      <workItem from="1663259356793" duration="5066000" />
+      <workItem from="1663259356793" duration="7650000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;enter">
       <created>1663176389068</created>
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663247239900</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="loader">
+      <created>1663264459235</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663264459235</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;enter" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;enter" />
+    <MESSAGE value="loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="loader" />
   </component>
 </project>

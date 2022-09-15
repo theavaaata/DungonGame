@@ -12,5 +12,7 @@ public class Main {
         gfx.Variables.variables();
         Loader.load();
         Loader.position();
+        KeyListener.keylistener();
+
     }
 }
