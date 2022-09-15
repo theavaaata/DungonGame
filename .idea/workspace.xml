@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="eb38ada7-0b30-43eb-96e7-341e65b517d9" name="Changes" comment="&#10;enter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gfx/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Gui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gfx/Variables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Variables.java" afterDir="false" />
     </list>
+    <list id="49a472a5-a42e-47ce-bc6b-91378a57d3f6" name="Changes by xbox-" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,24 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;app.teamhub.trackedBranches&quot;: &quot;-ak9lp0/main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/Java Programme/Ultimate/DungonSpiel/src/gfx&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "app.teamhub.trackedBranches": "-ak9lp0/main",
+    "last_opened_file_path": "/Applications/Java Programme/Ultimate/DungonSpiel/src/gfx",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "codetogether.settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/gfx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Loader" />
       <recent name="$PROJECT_DIR$/src/pngs" />
       <recent name="$PROJECT_DIR$/src/gfx" />
       <recent name="$PROJECT_DIR$/src/gfx/pngs" />
@@ -83,7 +89,9 @@
       <workItem from="1663180136954" duration="5928000" />
       <workItem from="1663239200470" duration="441000" />
       <workItem from="1663239645934" duration="163000" />
-      <workItem from="1663245238208" duration="1693000" />
+      <workItem from="1663245238208" duration="1874000" />
+      <workItem from="1663247427053" duration="321000" />
+      <workItem from="1663259356793" duration="5066000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;enter">
       <created>1663176389068</created>
@@ -113,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663239796938</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&#10;enter">
+      <created>1663247239900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663247239900</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

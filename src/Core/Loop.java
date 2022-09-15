@@ -13,7 +13,7 @@ public class Loop {
         tick.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                Gui.loader();
+                //Gui.loader();
                 Variables.draw.repaint();
             }
         },0,20);

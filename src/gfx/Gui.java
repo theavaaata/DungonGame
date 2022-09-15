@@ -10,7 +10,7 @@ public class Gui     {
     public static void gui(){
         JLabel j;
         ImageIcon i;
-        i = new ImageIcon(Objects.requireNonNull(Gui.class.getResource("grass.png")));
+        i = new ImageIcon(Objects.requireNonNull(Gui.class.getResource("Player.png")));
         i.setImage(i.getImage().getScaledInstance(Variables.size,Variables.size, Image.SCALE_DEFAULT));
 
         j = new JLabel(i);
