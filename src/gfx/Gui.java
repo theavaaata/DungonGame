@@ -2,16 +2,19 @@ package gfx;
 
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.Objects;
 import Loader.Loader;
 
 public class Gui     {
     public static void gui(){
         JLabel j;
-        Icon i;
+        ImageIcon i;
         i = new ImageIcon(Objects.requireNonNull(Gui.class.getResource("grass.png")));
+         i.setImage(i.getImage().getScaledInstance(100,100, Image.SCALE_DEFAULT));
+
         j = new JLabel(i);
-        j.setBounds(0,0,100,100);
+        j.setBounds(0,0,1000,1000);
 
 
         Variables.window = new JFrame("Dungeon");

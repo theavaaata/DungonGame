@@ -10,7 +10,6 @@ public class Draw extends JLabel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        g.drawRect(0,0,10,10);
 
     }
 }
