@@ -1,4 +1,4 @@
-package gfx;
+package GFX;
 
 import javax.swing.*;
 
@@ -6,7 +6,8 @@ public class Variables {
     //Zeichenklassen
     public static Draw draw = new Draw();
     //Hauptfenster
-    public static JFrame window;
+    public static JFrame window = new JFrame("Dungeon");
+
     //welcher Weltabschnitt gerade aktiv ist
     public static int world = 1;
     //Fenster breite
@@ -20,6 +21,6 @@ public class Variables {
         width = 1280;
         height = width / 16 * 9 + 28;
         size = width / 16;
-        Gui.gui();
+        //Gui.gui();
     }
 }

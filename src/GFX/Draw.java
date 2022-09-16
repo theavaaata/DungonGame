@@ -1,4 +1,4 @@
-package gfx;
+package GFX;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,9 +1,5 @@
 package Core;
 
-import Loader.Loader;
-import gfx.Gui;
-import gfx.Variables;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -15,9 +11,9 @@ public class Loop {
         tick.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-
-                Variables.draw.repaint();
+                Refresh.refresh();
+                //Variables.draw.repaint();
             }
-        },0,20);
+        },0,2000);
     }
 }
