@@ -6,7 +6,7 @@ public class Variables {
     //Zeichenklassen
     public static Draw draw = new Draw();
     //Hauptfenster
-    public static JFrame window = new JFrame("Dungeon");
+    public static JFrame window;
 
     //welcher Weltabschnitt gerade aktiv ist
     public static int world = 1;

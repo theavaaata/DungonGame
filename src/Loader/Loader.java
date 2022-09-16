@@ -79,7 +79,6 @@ public class Loader {
 
 
         loader();
-        position();
     }
     public static void loader(){
         System.out.println(Variables.world);
@@ -112,8 +111,10 @@ public class Loader {
                     }
 
                 }
+                System.out.println("geht");
                 break;
         }
+        position();
 
     }
     public static void position() {

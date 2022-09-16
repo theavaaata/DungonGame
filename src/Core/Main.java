@@ -11,9 +11,9 @@ public class Main {
     
     public static void main(String[] args) {
         Variables.variables();
+        Gui.gui();
         Player.player.main();
         GFX.gfx.main();
         KeyListener.keylistener();
-        Gui.gui();
     }
 }

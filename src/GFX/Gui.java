@@ -8,7 +8,7 @@ import Loader.Loader;
 
 public class Gui {
     public static void gui() {
-        //Variables.window = new JFrame("Dungeon");
+        Variables.window = new JFrame("Dungeon");
         Variables.window.setSize(Variables.width, Variables.height);
         Variables.window.setLocationRelativeTo(null);
         Variables.window.requestFocus();
