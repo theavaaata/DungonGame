@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Objects;
 
+import static GFX.Variables.window;
+
 public class Loader {
     /*die einzelnen Grafiken
     1 = grass
@@ -26,15 +28,17 @@ public class Loader {
 
 
      */
-    static int[][] world1 =   {{1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1},
+    static JLabel[] zaun = new JLabel[47];
+
+    static int[][] world1 =   {{1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
-                                {1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1},
+                                {1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1},
                                 {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
                                 {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
                                 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-                                {1,1,1,1,1,1,10,10,10,1,1,1,1,1,1,1}};
+                                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}};
     static int[][] world2 =   {{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
                                 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
                                 {1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1},
@@ -77,8 +81,26 @@ public class Loader {
         graphics[16].setImage(graphics[16].getImage().getScaledInstance(Variables.size,Variables.size, Image.SCALE_DEFAULT));
 
 
-
+        fence();
         loader();
+    }
+    public static void fence(){
+        for(int x = 1;x < 15;x++){
+            zaun[x] = new JLabel(graphics[10]);
+            zaun[x + 16] = new JLabel(graphics[10]);
+            zaun[x].setBounds(Variables.size * x, -Variables.size / 2, Variables.size, Variables.size);
+            zaun[x + 16].setBounds(Variables.size * x, Variables.height - Variables.size - Variables.size / 4, Variables.size, Variables.size);
+            window.add(zaun[x]);
+            window.add(zaun[x + 16]);
+        }
+        for(int x = 1;x < 8;x++){
+            zaun[x + 32] = new JLabel(graphics[13]);
+            zaun[x + 39] = new JLabel(graphics[16]);
+            zaun[x + 32].setBounds( -Variables.size / 2,Variables.size * x, Variables.size, Variables.size);
+            zaun[x + 39].setBounds(Variables.width - Variables.size + Variables.size / 16 * 7,Variables.size * x, Variables.size, Variables.size);
+            window.add(zaun[x + 32]);
+            window.add(zaun[x + 39]);
+        }
     }
     public static void loader(){
         System.out.println(Variables.world);
@@ -121,15 +143,16 @@ public class Loader {
         for (int x = 0; x < 16; x++) {
             for (int y = 0; y < 9; y++) {
                 tiles[y][x].setBounds(Variables.size * x, Variables.size * y, Variables.size, Variables.size);
-                Variables.window.add(tiles[y][x]);
+                window.add(tiles[y][x]);
             }
         }
         System.out.println("gsdfdsf");
+        window.repaint();
     }
     public static void clear(){
         for(int x = 0; x<16; x++){
             for(int y = 0; y<9; y++){
-                Variables.window.remove(tiles[y][x]);
+                window.remove(tiles[y][x]);
             }
         }
     }

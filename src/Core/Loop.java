@@ -13,11 +13,10 @@ public class Loop {
         tick.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
+                Refresh.refresh();
                 window.repaint();
-
-                //Refresh.refresh();
                 //Variables.draw.repaint();
             }
-        },0,20);
+        },100,20);
     }
 }

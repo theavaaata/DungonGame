@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/KeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/KeyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GFX/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GFX/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Refresh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Refresh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GFX/Variables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GFX/Variables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader/Loader.java" afterDir="false" />
     </list>
@@ -96,7 +95,8 @@
       <workItem from="1663259356793" duration="7806000" />
       <workItem from="1663347729039" duration="5536000" />
       <workItem from="1663353288917" duration="672000" />
-      <workItem from="1663357662637" duration="605000" />
+      <workItem from="1663357662637" duration="642000" />
+      <workItem from="1663413929712" duration="2447000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;enter">
       <created>1663176389068</created>
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663353943195</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="loader">
+      <created>1663358296664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663358296664</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

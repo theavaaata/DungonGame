@@ -11,9 +11,9 @@ public class Variables {
     //welcher Weltabschnitt gerade aktiv ist
     public static int world = 1;
     //Fenster breite
-    static int width;
+    public static int width;
     //Fenster Höhe
-    static int height;
+    public static int height;
     //tiles größe
     public static int size;
     public static void variables(){
