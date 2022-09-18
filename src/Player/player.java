@@ -17,6 +17,5 @@ public class player {
         player1 = new JLabel(Player[1]);
         player1.setBounds(600,500,Variables.size / 4 * 6,Variables.size / 8 * 4);
         GFX.Variables.window.add(player1);
-        System.out.println("vsadhvfsbdcjbsdubcdshjc");
     }
 }

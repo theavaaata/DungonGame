@@ -3,9 +3,7 @@ package Core;
 
 import GFX.Gui;
 import GFX.Variables;
-import Player.player;
 
-import static GFX.Variables.window;
 
 public class Main {
     

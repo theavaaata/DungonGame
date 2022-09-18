@@ -17,6 +17,6 @@ public class Loop {
                 window.repaint();
                 //Variables.draw.repaint();
             }
-        },100,20);
+        },0,50);
     }
 }
