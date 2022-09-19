@@ -20,26 +20,20 @@ public class Refresh {
     public static boolean left = false;
     static Timer move;
     public static void refresh(){
-        player1.setBounds(x,y,size,size);
+        player1.setBounds(x,y,playerwidth,playerheight);
     }
     public static void move(){
-        move = new Timer();
-        move.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                if(up){
-                    y--;
-                }
-                if(down){
-                    y++;
-                }
-                if(right){
-                    x++;
-                }
-                if(left){
-                    x--;
-                }
-            }
-        },0,2);
+        if(up){
+            y-= speed;
+        }
+        if(down){
+            y+= speed;
+        }
+        if(right){
+            x+= speed;
+        }
+        if(left){
+            x-= speed;
+        }
     }
 }

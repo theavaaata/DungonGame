@@ -30,7 +30,7 @@ public class KeyListener {
 
                 }
                 if(e.getKeyCode()==KeyEvent.VK_SPACE){
-                    //Loop.tick();
+                    Welten.Welten.zaunluecke();
                     Refresh.refresh();
                 }
                 if(e.getKeyCode()==KeyEvent.VK_D){

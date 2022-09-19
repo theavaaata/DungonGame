@@ -1,6 +1,8 @@
 package Core;
 
 
+import GFX.Variables;
+
 import java.awt.*;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -14,8 +16,10 @@ public class Loop {
         tick.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-
+                Player.Refresh.move();
                 Player.Refresh.refresh();
+                Player.player.collision();
+                Variables.draw.repaint();
             }
         },0,20);
     }

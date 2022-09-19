@@ -9,7 +9,7 @@ public class Draw extends JLabel {
     private static final long serialVersionUID = 1L;
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-
+        g.drawRect(Player.player.x,Player.player.y,Variables.size,Variables.size);
 
     }
 }

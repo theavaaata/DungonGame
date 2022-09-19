@@ -8,7 +8,7 @@ import static Loader.Loader.*;
 
 
 public class Worlds {
-    static int[][] World;
+    public static int[][] World;
     public static void define(){
         switch (Variables.world) {
             case 1 -> World = new int[][]{{1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1},
