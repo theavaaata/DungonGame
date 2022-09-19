@@ -1,9 +1,13 @@
 package Player;
 
+import GFX.Variables;
+
+import javax.swing.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import static GFX.Variables.size;
+import static GFX.Variables.window;
 import static Player.player.*;
 
 

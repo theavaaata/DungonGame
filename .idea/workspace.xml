@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb38ada7-0b30-43eb-96e7-341e65b517d9" name="Changes" comment="zaun">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DungonGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/KeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/KeyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Refresh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Refresh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GFX/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GFX/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GFX/gfx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GFX/gfx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader/Worlds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader/Worlds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/Refresh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/Refresh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/player.java" afterDir="false" />
     </list>
     <list id="49a472a5-a42e-47ce-bc6b-91378a57d3f6" name="Changes by xbox-" comment="" />
@@ -121,7 +114,8 @@
       <workItem from="1663581433720" duration="472000" />
       <workItem from="1663582186204" duration="35000" />
       <workItem from="1663584108832" duration="1714000" />
-      <workItem from="1663586957479" duration="371000" />
+      <workItem from="1663586957479" duration="527000" />
+      <workItem from="1663587940310" duration="1891000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;enter">
       <created>1663176389068</created>
@@ -214,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663516224964</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="zaun">
+      <created>1663587451352</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663587451353</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -10,11 +10,13 @@ public class player {
     public static int x = Variables.width / 2 - Variables.size / 2;
     public static int y = Variables.height / 2 - Variables.size / 2;
 
-    static ImageIcon[] Player = new ImageIcon[10];
+    public static ImageIcon[] Player = new ImageIcon[10];
     public static JLabel player1 = new JLabel();
     public static void main(){
-        Player[1] = new ImageIcon(Objects.requireNonNull(player.class.getResource("player.png")));
+        Player[1] = new ImageIcon(Objects.requireNonNull(player.class.getResource("PLayer.png")));
         Player[1].setImage(Player[1].getImage().getScaledInstance(Variables.size / 4 * 6,Variables.size / 8 * 4, Image.SCALE_DEFAULT));
+        Player[2] = new ImageIcon(Objects.requireNonNull(player.class.getResource("player2.png")));
+        Player[2].setImage(Player[1].getImage().getScaledInstance(Variables.size / 4 * 6,Variables.size / 8 * 4, Image.SCALE_DEFAULT));
 
 
         player1 = new JLabel(Player[1]);

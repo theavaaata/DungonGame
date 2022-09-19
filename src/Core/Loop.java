@@ -16,7 +16,6 @@ public class Loop {
             public void run() {
 
                 Player.Refresh.refresh();
-                //Variables.draw.repaint();
             }
         },0,20);
     }

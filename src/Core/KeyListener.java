@@ -1,7 +1,9 @@
 package Core;
 
 import GFX.Variables;
+import Player.player;
 
+import javax.swing.*;
 import java.awt.event.KeyEvent;
 
 
@@ -22,6 +24,10 @@ public class KeyListener {
                 }
                 if(e.getKeyCode()==KeyEvent.VK_2){
                     Variables.world = 2;
+                }
+                if(e.getKeyCode()==KeyEvent.VK_3){
+
+
                 }
                 if(e.getKeyCode()==KeyEvent.VK_SPACE){
                     //Loop.tick();
