@@ -1,11 +1,9 @@
 package Core;
 
-import Loader.Loader;
 import GFX.Variables;
 
 import java.awt.event.KeyEvent;
 
-import static Loader.Loader.tiles;
 
 public class KeyListener {
     public static void keylistener(){
@@ -24,16 +22,39 @@ public class KeyListener {
                 }
                 if(e.getKeyCode()==KeyEvent.VK_2){
                     Variables.world = 2;
-
                 }
                 if(e.getKeyCode()==KeyEvent.VK_SPACE){
-                    Loop.tick();
+                    //Loop.tick();
+                    Refresh.refresh();
+                }
+                if(e.getKeyCode()==KeyEvent.VK_D){
+                    Player.Refresh.right = true;
+                }
+                if(e.getKeyCode()==KeyEvent.VK_A){
+                    Player.Refresh.left = true;
+                }
+                if(e.getKeyCode()==KeyEvent.VK_S){
+                    Player.Refresh.down = true;
+                }
+                if(e.getKeyCode()==KeyEvent.VK_W){
+                    Player.Refresh.up = true;
                 }
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
-
+                if(e.getKeyCode()==KeyEvent.VK_D){
+                    Player.Refresh.right = false;
+                }
+                if(e.getKeyCode()==KeyEvent.VK_A){
+                    Player.Refresh.left = false;
+                }
+                if(e.getKeyCode()==KeyEvent.VK_S){
+                    Player.Refresh.down = false;
+                }
+                if(e.getKeyCode()==KeyEvent.VK_W){
+                    Player.Refresh.up = false;
+                }
             }
         });
     }

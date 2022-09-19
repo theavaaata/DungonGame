@@ -1,9 +1,10 @@
 package Core;
 
+
+import java.awt.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static GFX.Variables.window;
 
 public class Loop {
     //Main Game Loop
@@ -13,10 +14,10 @@ public class Loop {
         tick.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                Refresh.refresh();
-                window.repaint();
+
+                Player.Refresh.refresh();
                 //Variables.draw.repaint();
             }
-        },0,50);
+        },0,20);
     }
 }

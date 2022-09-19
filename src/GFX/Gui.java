@@ -2,9 +2,6 @@ package GFX;
 
 
 import javax.swing.*;
-import java.awt.*;
-import java.util.Objects;
-import Loader.Loader;
 
 public class Gui {
     public static void gui() {

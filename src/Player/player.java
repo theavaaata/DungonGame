@@ -7,6 +7,9 @@ import java.awt.*;
 import java.util.Objects;
 
 public class player {
+    public static int x = Variables.width / 2 - Variables.size / 2;
+    public static int y = Variables.height / 2 - Variables.size / 2;
+
     static ImageIcon[] Player = new ImageIcon[10];
     public static JLabel player1 = new JLabel();
     public static void main(){
@@ -15,7 +18,8 @@ public class player {
 
 
         player1 = new JLabel(Player[1]);
-        player1.setBounds(600,500,Variables.size / 4 * 6,Variables.size / 8 * 4);
+        player1.setBounds(x,y,Variables.size,Variables.size);
         GFX.Variables.window.add(player1);
+        Refresh.move();
     }
 }

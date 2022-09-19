@@ -1,17 +1,18 @@
 package Core;
 
 
-import GFX.Gui;
 import GFX.Variables;
 
+import static Core.Refresh.refresh;
 
 public class Main {
     
     public static void main(String[] args) {
         Variables.variables();
-        Gui.gui();
-        Player.player.main();
         GFX.gfx.main();
+        Player.player.main();
         KeyListener.keylistener();
+        Loop.tick();
+        refresh();
     }
 }

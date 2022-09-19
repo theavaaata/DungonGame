@@ -4,16 +4,17 @@ package Core;
 import Loader.Loader;
 import Loader.Worlds;
 
+import static GFX.Variables.window;
 import static GFX.Variables.world;
+import static Loader.Worlds.define;
 
 public class Refresh {
     public static void refresh(){
         Loader.clear();
-        switch (world) {
-            case 1 -> Worlds.w1();
-            case 2 -> Worlds.w2();
-        }
+        Loader.fenceclear();
+        define();
+        Loader.fence();
         Loader.position();
-        //Loader.loader();
+        window.repaint();
     }
 }

@@ -7,7 +7,8 @@ import java.awt.*;
 import java.util.Objects;
 
 import static GFX.Variables.*;
-import static Loader.Worlds.*;
+import static Loader.Worlds.World;
+import static Loader.Worlds.define;
 
 public class Loader {
     /*die einzelnen Grafiken
@@ -21,16 +22,18 @@ public class Loader {
    15 = Zaun oben Rechts
    16 = Zaun Mitte Rechts
     */
-    static ImageIcon[] graphics = new ImageIcon[100];
+    public static ImageIcon[] graphics = new ImageIcon[100];
     //die eingefügten Grapfiken
     public static JLabel[][] tiles = new JLabel[9][16];
     /*World design
 
 
      */
-    static JLabel[] zaun = new JLabel[47];
+    static JLabel[] zaun = new JLabel[46];
 
-
+    static int[][] zaunh;
+    static int[][] zaunl;
+    static int[][] zaunr;
 
     public static void load(){
         graphics[1] = new ImageIcon(Objects.requireNonNull(Loader.class.getResource("grass.png")));
@@ -70,6 +73,30 @@ public class Loader {
         zaun[2] = new JLabel(graphics[11]);
         zaun[3] = new JLabel(graphics[14]);
 
+
+
+        for(int x = 0;x < 28;x++){
+            zaun[x + 4] = new JLabel(graphics[10]);
+        }
+        for(int x = 0;x < 7;x++){
+            zaun[x + 32] = new JLabel(graphics[13]);
+        }
+        for(int x = 0;x < 7;x++){
+            zaun[x + 39] = new JLabel(graphics[16]);
+        }
+        zaunh = new int[][]{{1,2,3,4,5,6,7,8,9,10,11,12,13,14,1,2,3,4,5,6,7,8,9,10,11,12,13,14},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,8,8,8,8,8,8,8}};
+        zaunl = new int[][]{{0,0,0,0,0,0,0},
+                {1,2,3,4,5,6,7}};
+        zaunr = new int[][]{{15,15,15,15,15,15,15},
+                {1,2,3,4,5,6,7}};
+
+        define();
+        fence();
+        position();
+        window.repaint();
+    }
+    public static void fence(){
         zaun[0].setBounds(0,-2,Variables.size,Variables.size);
         zaun[1].setBounds(width - Variables.size,0,Variables.size - 2,Variables.size);
         zaun[2].setBounds(0,height - Variables.size - Variables.size / 4 - 8,Variables.size,Variables.size);
@@ -79,28 +106,33 @@ public class Loader {
         window.add(zaun[1]);
         window.add(zaun[2]);
         window.add(zaun[3]);
-
-
-        Worlds.w1();
-        fence();
-        position();
-    }
-    public static void fence(){
-        for(int x = 0;x < 12;x++){
-            zaun[x + 4].setBounds(size * zaunh[0][x],size * zaunh[1][x] - size / 2,size,size);
+        for(int x = 0;x < 14;x++){
+            zaun[x + 4].setBounds(size * zaunh[0][x],-size / 2,size,size);
             window.add(zaun[x + 4]);
+            if(World[0][x + 1] == 2){
+                zaun[x + 4].setBounds(-100,-100,size,size);
+            }
         }
-        for(int x = 12;x < 26;x++){
-            zaun[x + 4].setBounds(size * zaunh[0][x],size * zaunh[1][x],size,size);
-            window.add(zaun[x + 4]);
+        for(int x = 0;x < 14;x++){
+            zaun[x + 18].setBounds(size * zaunh[0][x + 14],size * zaunh[1][x + 14],size,size);
+            window.add(zaun[x + 18]);
+            if(World[8][x + 1] == 2){
+                zaun[x + 18].setBounds(-100,-100,size,size);
+            }
         }
-        for(int x = 0;x < 5;x++){
-            zaun[x + 30].setBounds(size * zaunl[0][x] - 6,size * zaunl[1][x],size,size);
-            window.add(zaun[x + 30]);
+        for(int x = 0;x < 7;x++){
+            zaun[x + 32].setBounds(size * zaunl[0][x] - 6,size * zaunl[1][x],size,size);
+            window.add(zaun[x + 32]);
+            if(World[x + 1][0] == 2){
+                zaun[x + 32].setBounds(-100,-100,size,size);
+            }
         }
-        for(int x = 0;x < 5;x++){
-            zaun[x + 35].setBounds(size * zaunr[0][x],size * zaunr[1][x],size,size);
-            window.add(zaun[x + 35]);
+        for(int x = 0;x < 7;x++){
+            zaun[x + 39].setBounds(size * zaunr[0][x],size * zaunr[1][x],size,size);
+            window.add(zaun[x + 39]);
+            if(World[x + 1][15] == 2){
+                zaun[x + 39].setBounds(-100,-100,size,size);
+            }
         }
     }
 
@@ -112,13 +144,17 @@ public class Loader {
             }
         }
 
-        window.repaint();
     }
     public static void clear(){
         for(int x = 0; x<16; x++){
             for(int y = 0; y<9; y++){
                 window.remove(tiles[y][x]);
             }
+        }
+    }
+    public static void fenceclear(){
+        for(int x = 0;x < 46;x++){
+            window.remove(zaun[x]);
         }
     }
 }
