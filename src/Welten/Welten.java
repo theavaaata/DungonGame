@@ -59,7 +59,8 @@ public class Welten {
     public static void welten(){
         zaunluecke();
         switch (world){
-            //case 1 -> Welt1.border();
+            case 1 -> Welt1.main();
+            case 2 -> Welt2.main();
         }
     }
 

@@ -1,6 +1,8 @@
 package Player;
 
 import GFX.Variables;
+import Welten.Welt1;
+import Welten.Welten;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,7 +14,7 @@ import static Player.Refresh.up;
 
 public class player {
     static int playerwidth = size;
-    static int playerheight = size;
+    public static int playerheight = size;
     static int speed = 10;
     public static int[][] border = new int[4][3];
     public static int x = Variables.width / 2 - size / 2;
@@ -45,5 +47,6 @@ public class player {
         if(((border[3][0] >= y)||(border[3][0] + border[3][1] <= y + playerheight))&&(border[3][2] <= x + playerwidth)){
             x-= speed;
         }
+        Welten.welten();
     }
 }

@@ -1,9 +1,10 @@
 package Core;
 
 
-import GFX.Variables;
 
-import java.awt.*;
+import GFX.Variables;
+import Player.player;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -20,6 +21,9 @@ public class Loop {
                 Player.Refresh.refresh();
                 Player.player.collision();
                 Variables.draw.repaint();
+
+                //System.out.println(player.x);
+                //System.out.println(player.y);
             }
         },0,20);
     }
