@@ -9,7 +9,6 @@ public class Welt1 {
             Variables.world = 2;
             Player.player.y = 8 * Player.player.playerheight;
             Refresh.refresh();
-            Welten.zaunluecke();
         }
     }
 }

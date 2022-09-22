@@ -13,7 +13,6 @@ public class Main {
         Player.player.main();
         KeyListener.keylistener();
         Loop.tick();
-        Welten.Welten.zaunluecke();
         refresh();
     }
 }

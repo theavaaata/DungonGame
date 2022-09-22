@@ -10,7 +10,6 @@ public class Welt2 {
             Variables.world = 1;
             Player.player.y = 0;
             Refresh.refresh();
-            Welten.zaunluecke();
         }
     }
 }
