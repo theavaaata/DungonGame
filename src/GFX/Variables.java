@@ -9,7 +9,7 @@ public class Variables {
     public static JFrame window;
 
     //welcher Weltabschnitt gerade aktiv ist
-    public static int world = 1;
+    public static int world = 5;
     //Fenster breite
     public static int width;
     //Fenster Höhe

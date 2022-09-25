@@ -1,5 +1,9 @@
 package Welten;
 
+import Core.Refresh;
+import GFX.Variables;
+import Player.player;
+
 import static GFX.Variables.*;
 import static GFX.Variables.size;
 import static Loader.Worlds.World;
@@ -56,11 +60,34 @@ public class Welten {
         lueckenpos = 0;
 
     }
-    public static void welten(){
-        switch (world){
-            case 1 -> Welt1.main();
+    public static void welten() {
+        /*switch (world) {
+            case 5 -> Welt5.main();
             case 2 -> Welt2.main();
+        }*/
+        //runter
+        if (Player.player.y > Variables.height) {
+            world += 3;
+            Player.player.y = 0;
+            Refresh.refresh();
+        }
+        //hoch
+        if(Player.player.y < -Player.player.playerheight){
+            Variables.world -= 3;
+            Player.player.y = height;
+            Refresh.refresh();
+        }
+        //links
+        if(Player.player.x < -player.playerheight){
+            Variables.world -= 1;
+            Player.player.x = width;
+            Refresh.refresh();
+        }
+        //rechts
+        if(Player.player.x > width){
+            Variables.world += 1;
+            Player.player.x = 0;
+            Refresh.refresh();
         }
     }
-
 }

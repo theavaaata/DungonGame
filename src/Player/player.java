@@ -1,7 +1,6 @@
 package Player;
 
 import GFX.Variables;
-import Welten.Welt1;
 import Welten.Welten;
 
 import javax.swing.*;
@@ -9,8 +8,6 @@ import java.awt.*;
 import java.util.Objects;
 
 import static GFX.Variables.size;
-import static Loader.Worlds.World;
-import static Player.Refresh.up;
 
 public class player {
     static int playerwidth = size;
